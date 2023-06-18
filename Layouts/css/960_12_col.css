@@ -1,0 +1,19 @@
+
+* {
+  font-family: Arial, Veranda, sand-serif;
+  color: #00BFFF;
+  text-align: center;}
+#nav, #feature, .article, #footer {
+  background-color: #87CEFA;
+  margin-top: 20px;
+  padding: 10px 0px 25px;}
+#feature, .article {
+  height: 100px;}
+li {
+  display: inline;
+  padding: 5px;
+  list-style: none;}
+
+body {
+  background-color: #00BFFF;
+}
