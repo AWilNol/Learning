@@ -12,8 +12,6 @@ h2 {
 p {
   font-size: 14px;}
 
-$time: 0.3s;
-
 body {
    height: 100vh;
    display: flex;
