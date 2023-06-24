@@ -9,6 +9,13 @@
        margin: auto;}
 }
 
+body {
+  font-family: Lora;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+}
+
 h1 {
   margin: 0;
   background-color: #B0E0E6;
@@ -24,18 +31,14 @@ h2 {
   color: black;
   text-align: center;}
 
-p {
-  font-family: Lora;
-  font-size: 18px;
-  color: black;
-  text-align: center;
-}
-
-.banner {
+#ccbanner {
   padding-top: 15px;
   left: 10px;
   padding: 10px 16px;  
 }
+
+/* This gallery is credit to Justine Evans @UM Media Arts and iGadget: https://codepen.io/iGadget
+and when it works it looks great. See the Pen: ttps://codepen.io/iGadget/pen/jOEQKNN */
 
 #gallery-container {
   margin: 200px auto;
@@ -47,10 +50,6 @@ p {
   /*background-color: #bdd8f1;*/
 }
 
-/*
-This gallery is credit to iGadget: https://codepen.io/iGadget
-See the Pen: ttps://codepen.io/iGadget/pen/jOEQKNN
-*/
 .images {
   display: grid;
   grid-template-columns: repeat(19, 5vw);
@@ -81,7 +80,6 @@ img {
   transition: all 0.15s ease(downhill);
   position: relative;
   box-shadow: 0 0 0 #000 0;
-  
   /*opacity: 0.67;*/
   /*filter: sepia(80%) hue-rotate(180deg);*/
 }
