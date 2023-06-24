@@ -36,7 +36,19 @@ body {
   width: 100%;
 }
 
-.sticky + #container + .banner.gallery:hover {
+.sticky + #container + .banner {
+  padding-top: 15px;
+}
+
+.top {
+  font-family: Lora;
+  font-size: 18px;
+  color: mediumseagreen;
+  text-align: center;
+}
+
+
+.gallery:hover {
   border-color: white;}
 
 #gallery-container {
@@ -57,7 +69,7 @@ See the Pen: ttps://codepen.io/iGadget/pen/jOEQKNN
  .images {
    display: grid;
    grid-template-rows: 20vh;
-   grid-template-columns: repeat(13, 5vw);
+   grid-template-columns: repeat(19, 5vw);
    transition: all 0.3s ease(gravity);
    background-color: #82a6cb;
    border-radius: 10px;
@@ -78,8 +90,6 @@ See the Pen: ttps://codepen.io/iGadget/pen/jOEQKNN
 
  img {
    object-fit: cover;
-   width: 100%;
-   height: 100%;
    left: 0;
    top: 0;
    text-align: center;
@@ -112,15 +122,6 @@ See the Pen: ttps://codepen.io/iGadget/pen/jOEQKNN
 
 #gallery-container img:last-child:hover {
   left: 1%;
-} {
-  padding-top: 15px;
-}
-
-.top {
-  font-family: Lora;
-  font-size: 18px;
-  color: mediumseagreen;
-  text-align: center;
-}
+} 
 
 
