@@ -9,9 +9,20 @@
        margin: auto;}
 }
 
-h3 {
-        color:darkred;
-      }
+h1 {
+  margin: 0;
+  background-color: #B0E0E6;
+  font-family: Tinos, serif;
+  color: black;
+  font-size: 2.8em;
+  text-align: center;}
+
+h2 {
+  background-color: #B0E0E6;
+  font-family: Tinos, serif;
+  font-size: 1.8em;
+  color: black;
+  text-align: center;}
 
 #container { 
   position: fixed;
@@ -62,7 +73,7 @@ See the Pen: ttps://codepen.io/iGadget/pen/jOEQKNN
 */
 .images {
   display: grid;
-  grid-template-columns: repeat(18, 5vw);
+  grid-template-columns: repeat(19, 5vw);
   grid-template-rows: 25vh;
   transition: all 0.3s ease(gravity);
   background-color: #82a6cb;
