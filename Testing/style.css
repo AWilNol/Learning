@@ -1,61 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@300&family=Tinos&display=swap');
 
 @media screen and (min-width: 768px) and (min-width: 360px), (max-width: 1280px) {
+   #ccbanner {
+       position: fixed;}
    .main {
        margin: auto;}
-   
-}
-
-.main {
-  background-color: #FFE4B5;  
-  font-family: Tinos;
-  font-size: 16px;
-  color: mediumseagreen;
-  text-align: left;
-  margin: 0; 
-  
-}
-
-#ccbanner {
-  position: fixed;
-  margin-top: 10px;
-  top: 1px;
-  left: 10px;
-  width: 30%;
-  padding: 50px;
-  z-index: 8;
-  transform: translate(-50%, -50%); 
-}
-
-h1 {
-  font-family: Lora;
-  font-size: 18px;
-  color: mediumseagreen;
-  position: center;
+   body {
+       margin: auto;}
 }
 
 body {
-  font-family: Tinos;
-  font-size: 16px;
-  color: mediumseagreen;
+  margin: 0;
+  font-family: Tinos, sans-serif;
   overflow: hidden;
 }
 
-#container {
-  background-image: url("./images/WOODGRAIN.jpg"); 
-  position: absolute;
-  width: 800px;
-  height: 100%;
-  font-family: Tinos;
-  font-size: 18px;
-  color: #FFE4B5;
-   
+#container { 
+  position: fixed;
+  padding: 30px;
+  text-alignment: center;
+  overflow: hidden;}
+     
+}
+
+.banner {
+  padding-top: 15px;
+  left: 10px;
+  padding: 10px 16px;
+  
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + #container + .banner.gallery:hover {
+  border-color: white;}
+
+#gallery-container {
+   margin: 200px auto;
+   height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   /*background-color: #bdd8f1;*/
+}
+
+/*
+This gallery is credit to iGadget: https://codepen.io/iGadget
+See the Pen: ttps://codepen.io/iGadget/pen/jOEQKNN
+*/
+
+ .images {
+   display: grid;
+   grid-template-rows: 20vh;
+   grid-template-columns: repeat(13, 5vw);
+   transition: all 0.3s ease(gravity);
+   background-color: #82a6cb;
+   border-radius: 10px;
+   padding: 0.25em;
+  }
+
+/* Courtesy https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+  .images:hover {
+    display: flex;
+    flex-grow: 0;
+  }
+
+  .images:active {
+    display: flex;
+    flex-grow: 2;
+  }
+
+ img {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   text-align: center;
+   transition: all 0.15s ease(downhill);
+   position: flex;
+   box-shadow: 0 0 0 #000 0;
+
+   /* APRIL TO JUSTINE: Thank you for all your help; appreciate you! */
+   /*opacity: 0.67;*/
+   /*filter: sepia(80%) hue-rotate(180deg);*/
+}
+
+ img:first-child {
+   border-radius: 10px 0 0 10px;
+}
+
+ img:last-child {
+   border-radius: 0 10px 10px 0;
+}
+/*I am guessing this area controls size, but changes do not have desired effect/s.*/
+#gallery-container img:hover~img {
+  left: 1%;
+  width: 10%;
+  height: 10%;
+}
+
+#gallery-container img:first-child:hover {
+  left:1%;
+}
+
+#gallery-container img:last-child:hover {
+  left: 1%;
+} {
+  padding-top: 15px;
 }
 
 .top {
   font-family: Lora;
   font-size: 18px;
   color: mediumseagreen;
+  text-align: center;
 }
 
 
