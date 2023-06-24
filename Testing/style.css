@@ -9,11 +9,9 @@
        margin: auto;}
 }
 
-body {
-  margin: 0;
-  font-family: Tinos, sans-serif;
-  overflow: hidden;
-}
+h3 {
+        color:darkred;
+      }
 
 #container { 
   position: fixed;
@@ -48,37 +46,32 @@ body {
 }
 
 
-.gallery:hover {
-  border-color: white;}
-
 #gallery-container {
-   margin: 200px auto;
-   height: 100px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   overflow: hidden;
-   /*background-color: #bdd8f1;*/
+  margin: 200px auto;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /*background-color: #bdd8f1;*/
 }
 
 /*
 This gallery is credit to iGadget: https://codepen.io/iGadget
 See the Pen: ttps://codepen.io/iGadget/pen/jOEQKNN
 */
+.images {
+  display: grid;
+  grid-template-columns: repeat(18, 5vw);
+  grid-template-rows: 25vh;
+  transition: all 0.3s ease(gravity);
+  background-color: #82a6cb;
+  border-radius: 10px;
+  padding: 0.25em;
+  cursor: zoom-in;
+}
 
- .images {
-   display: grid;
-   grid-template-rows: 20vh;
-   grid-template-columns: repeat(19, 5vw);
-   transition: all 0.3s ease(gravity);
-   background-color: #82a6cb;
-   border-radius: 10px;
-   padding: 0.25em;
-  }
-
-/* Courtesy https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-
-  .images:hover {
+.images:hover {
     display: flex;
     flex-grow: 0;
   }
@@ -88,40 +81,44 @@ See the Pen: ttps://codepen.io/iGadget/pen/jOEQKNN
     flex-grow: 2;
   }
 
- img {
-   object-fit: cover;
-   left: 0;
-   top: 0;
-   text-align: center;
-   transition: all 0.15s ease(downhill);
-   position: flex;
-   box-shadow: 0 0 0 #000 0;
-
-   /* APRIL TO JUSTINE: Thank you for all your help; appreciate you! */
-   /*opacity: 0.67;*/
-   /*filter: sepia(80%) hue-rotate(180deg);*/
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all 0.15s ease(downhill);
+  position: relative;
+  box-shadow: 0 0 0 #000 0;
+  
+  /*opacity: 0.67;*/
+  /*filter: sepia(80%) hue-rotate(180deg);*/
 }
 
- img:first-child {
-   border-radius: 10px 0 0 10px;
+img:first-child {
+  border-radius: 10px 0 0 10px;
 }
 
- img:last-child {
-   border-radius: 0 10px 10px 0;
+img:last-child {
+  border-radius: 0 10px 10px 0;
 }
-/*I am guessing this area controls size, but changes do not have desired effect/s.*/
-#gallery-container img:hover~img {
-  left: 1%;
+
+#gallery-container img:hover {;
+  opacity: 1;
+  z-index: 1;
+  box-shadow: 1em 1em 1em #000 4;
+  transition: all 0.3s ease;
+  filter: sepia(0%) hue-rotate(0deg);
+  border-radius: 15px;
   width: 10%;
   height: 10%;
-}
-
-#gallery-container img:first-child:hover {
-  left:1%;
-}
-
-#gallery-container img:last-child:hover {
   left: 1%;
-} 
+  top: -50%;
+}
 
-
+#gallery-container  img:first-child:hover {
+  left: 1%;
+}
+#gallery-container  img:last-child:hover {
+  left: 1%;
+}
