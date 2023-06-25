@@ -53,7 +53,7 @@ and when it works- it looks great. See the Pen: ttps://codepen.io/iGadget/pen/jO
 .images {
   display: grid;
   grid-template-columns: repeat(19, 5vw);
-  grid-template-rows: 25vh;
+  grid-template-rows: 20vh;
   transition: all 0.3s ease(gravity);
   background-color: #82a6cb;
   border-radius: 10px;
@@ -93,12 +93,6 @@ img:last-child {
 }
 
 #gallery-container img:hover {;
-  opacity: 1;
-  z-index: 1;
-  box-shadow: 1em 1em 1em #000 4;
-  transition: all 0.3s ease;
-  filter: sepia(0%) hue-rotate(0deg);
-  border-radius: 15px;
   width: 10%;
   height: 10%;
   left: 1%;
