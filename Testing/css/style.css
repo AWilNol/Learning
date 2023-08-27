@@ -57,7 +57,14 @@ ccbanner {
   padding: 10px 16px;  
 }
 
-
+img:hover {
+  background-color: gray;
+  width: 300px;
+  height: 400px;
+  float: center;
+  margin: 3em auto;
+  border: 2px solid gray;
+}
 
 
 
